@@ -1,0 +1,328 @@
+.add{
+  text-align: center;
+}
+
+.col-8  .big{
+    position: relative;
+    font-family: Arial;
+}
+.col-4  {
+    position: relative;
+    font-family: Arial;
+}
+
+
+    .text-block {
+    position: absolute;
+    bottom: 20px;
+    right: 120px;
+    background-color: rgb(102, 98, 98);
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    transition: .5s ease;
+  } 
+.text-block1 {
+  position: absolute;
+  bottom: 20px;
+  left: 150px;
+  background-color: rgb(102, 98, 98);
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  transition: .5s ease;
+
+} 
+
+.text-block2 {
+  position: absolute;
+  bottom: 40px;
+  right:-150px;
+  background-color: rgb(102, 98, 98);
+  color: white;
+  padding-left: 20px;
+  padding-right: 30px;
+  transition: .5s ease;
+
+} 
+.text-block3 {
+  position: absolute;
+  bottom: 25px;
+  right: 180px;
+  background-color: rgb(102, 98, 98);
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  transition: .5s ease;
+
+} 
+.text-block4 {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background-color: rgb(102, 98, 98);
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  transition: .5s ease;
+
+} 
+.text-block5 {
+  position: absolute;
+  bottom: 20px;
+  left: 180px;
+  background-color: rgb(102, 98, 98);
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  transition: .5s ease;
+
+} 
+.text-block7 {
+  position: absolute;
+  bottom: -660px;
+  right:- 65px;
+  /* background-color: rgb(231, 225, 225); */
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  transition: .5s ease;
+
+} 
+.text-block6 {
+  position: absolute;
+  bottom: 80px;
+  left: 200px;
+  /* background-color: rgb(102, 98, 98); */
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  transition: .5s ease;
+
+} 
+
+
+.big:hover {
+    /* transform: scale(0.9); */
+    /* transition: 0.7s; */
+    transition: transform 0.5s ease-in-out;
+    transform: scale(1.01);
+    overflow: hidden;
+}
+
+.long:hover {
+    /* transform: scale(0.9); */
+    transform: scale(1.02);
+    /* transition: 0.9s; */
+    transition: transform 0.5s ease-in-out;
+    overflow: hidden;
+}
+
+.small:hover {
+    /* transform: scale(0.9); */
+    transform: scale(1.02);
+    /* transition: 0.7s; */
+    transition: transform 0.5s ease-in-out;
+    overflow: hidden;
+}
+
+
+.safari{
+    
+    padding-top: 20px;
+    padding-left: 140px;
+    
+}
+
+.safari .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+    max-width: 90%;
+    
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    flex: 25%;
+    max-width: 50%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+
+
+  * {box-sizing: border-box;}
+
+.column{
+  position: relative;
+  width: 20%;
+  max-width: 400px;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.column:hover .overlay {
+  opacity: 1;
+}
+
+
+
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+  
+
+.hover02 figure img {
+	width: 300px;
+	height: auto;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+  
+
+
+
+ 
+
+  
